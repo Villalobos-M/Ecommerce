@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/pages/about.styles.css"
 
 const About = () => {
+
+  const [email, setEmail] = useState("")
+
+  const submit= (e) =>{
+    e.preventDefault()
+    setEmail("")
+  }
   return (
     <div className='container-about'>
       <h2>JAWERLY BIZZ</h2>
@@ -28,12 +35,17 @@ const About = () => {
       <p>Sign up to receive news and updates</p>
 
     <section className="container-input-about">
+      <form className='form-about' onSubmit={submit}>
         <input 
           type="email"
           placeholder='Email Adress' 
           required
+          onChange={e => setEmail(e.target.value)}
+          value={email}
         />
         <button className='btn-about-signup'> Sign Up</button>
+      </form>
+        
     </section>
 
     </div>

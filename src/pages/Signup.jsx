@@ -5,13 +5,16 @@ import { Link } from 'react-router-dom'
 import "../styles/pages/signup.styles.css"
 
 const Signup = () => {
-  const {register, handleSubmit} = useForm();
+  const {register, handleSubmit, reset} = useForm();
+
+  const defaultValues = {first_name: "", last_name: "", email: "", password: ""}
 
   const submit = data =>{
     console.log(data);
     axios.post("https://ecommerce-exercise-backend.herokuapp.com/users/", data)
          .then(res => console.log(res.data))
          .catch(res => console.log(res.response))
+    reset(defaultValues)
   }
 
   return (

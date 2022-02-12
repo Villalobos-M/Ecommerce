@@ -54,7 +54,7 @@ const Account = () => {
             <p>{user.cart?.length}</p>
         </div>
         <div className="container-btn-getout">
-        <button onClick={getOut}>get out</button>
+        <button onClick={getOut}>Sign out</button>
       </div>
 
         <div className='container-info' >
