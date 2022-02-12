@@ -1,0 +1,103 @@
+.ul-prod {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.ontainer-product-search {
+     min-height: 100vh;
+     margin-bottom: 3rem;
+}
+.bg-shop {
+     background-color: rgb(255, 255, 255);
+     margin-bottom: 6rem;
+}
+.container-type {
+     width: 100%;
+     padding: 1rem;
+     background-color: transparent;
+     display: flex;
+     justify-content: space-evenly;
+}
+.btn-type {
+     font-size: 15px;
+     border: none;
+     padding-bottom: 3px;
+     background-color: transparent;
+     border-bottom: solid 0.5px rgba(167, 165, 165, 0.678);
+}
+
+.btn-type {
+     background: #fff; /* color de fondo */
+     color: #180e0e; /* color de fuente */
+     border-bottom: 1px solid #75ac77ab; /* tamaño y color de borde */
+     padding: 6px 12px;
+     border-radius: 3px; /* redondear bordes */
+     position: relative;
+     z-index: 1;
+     overflow: hidden;
+     display: inline-block;
+}
+.btn-type:hover {
+     color: #fff; /* color de fuente hover */
+}
+.btn-type::after {
+     content: "";
+     background: #75ac77e7; /* color de fondo hover */
+     position: absolute;
+     z-index: -1;
+     display: block;
+     left: 0;
+     right: 0;
+     top: 100%;
+     bottom: -100%;
+     -webkit-transition: all 0.35s;
+     transition: all 0.35s;
+}
+.btn-type:hover::after {
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     -webkit-transition: all 0.35s;
+     transition: all 0.35s;
+}
+
+@media screen and (min-width: 500px) {
+     .ul-prod {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+     }
+}
+@media screen and (min-width: 700px) {
+     .ul-prod {
+          padding: 0 1rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 0 2rem;
+     }
+     .container-type {
+          padding: 1.5rem;
+     }
+}
+@media screen and (min-width: 900px) {
+     .container-type {
+          padding: 1.5rem 5rem;
+     }
+     .ul-prod {
+          padding: 0 1.5rem;
+     }
+}
+@media screen and (min-width: 1100px) {
+     .container-type {
+          padding: 1.5rem 17rem;
+     }
+     .ul-prod {
+          padding: 0 7rem;
+          margin: 0;
+     }
+}

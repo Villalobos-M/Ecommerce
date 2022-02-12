@@ -1,0 +1,101 @@
+.container-orders > ul > li {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 250px;
+     border: solid 1px rgba(128, 128, 128, 0.411);
+     width: 60%;
+     margin: 1rem 0;
+     background-color: rgb(250, 249, 249);
+     padding: 1px 2px;
+}
+.container-orders > ul {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.container-orders > ul > li > h2 {
+     font-size: 13px;
+     text-align: center;
+}
+.container-orders > ul > li > h4 {
+     font-size: 12px;
+}
+.container-orders > ul > li > div > p {
+     font-size: 11px;
+}
+.container-price {
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+}
+@media screen and (min-width: 450px) {
+     .container-orders > ul > li {
+          width: 48%;
+     }
+}
+@media screen and (min-width: 550px) {
+     .container-orders > ul > li {
+          width: 29%;
+     }
+     .container-orders > ul {
+          padding: 0 1em;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+     }
+}
+@media screen and (min-width: 700px) {
+     .container-orders > ul > li {
+          width: 28%;
+     }
+}
+@media screen and (min-width: 850px) {
+     .container-orders > ul > li {
+          width: 26%;
+     }
+     .container-orders > ul {
+          padding: 0 3rem;
+     }
+     .container-orders > ul > li > h2 {
+          font-size: 13px;
+     }
+     .container-orders > ul > li > h4 {
+          font-size: 12px;
+     }
+     .container-orders > ul > li > div > p {
+          font-size: 12px;
+     }
+}
+@media screen and (min-width: 1050px) {
+     .container-orders > ul > li {
+          width: 22%;
+          margin: 1rem 1rem;
+     }
+     .container-orders > ul {
+          padding: 0 5rem;
+     }
+     .container-orders > ul > li > h2 {
+          font-size: 13px;
+     }
+     .container-orders > ul > li > img {
+          height: 80px;
+     }
+}
+@media screen and (min-width: 1150px) {
+     .container-orders > ul > li {
+          width: 16%;
+          margin: 1rem 1rem;
+     }
+     .container-orders > ul {
+          padding: 0 4rem;
+     }
+     .container-orders > ul > li > h2 {
+          font-size: 14px;
+     }
+     .container-orders > ul > li > img {
+          height: 90px;
+     }
+}

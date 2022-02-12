@@ -1,0 +1,169 @@
+.bg-login {
+     height: 100vh;
+     background-image: url("../../images/bg-clasica.jpg");
+     background-position-x: center;
+     background-position-y: top;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.bg2-login {
+     height: 100vh;
+     width: 100vw;
+     background-color: rgba(90, 87, 87, 0.541);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.container-login {
+     height: 67%;
+     width: 85%;
+     background-color: rgba(233, 230, 230, 0.363);
+     border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 1.5rem;
+}
+.test {
+     height: 25%;
+     background-color: rgba(90, 90, 90, 0.452);
+     border-radius: 1rem;
+     padding: 0.7rem 0.5rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: flex-start;
+}
+.test > p {
+     color: #1f1d1d;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.test > h4 {
+     width: 100%;
+     text-align: center !important;
+}
+.input-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+.form-login {
+     margin: 1rem 0;
+}
+h1 {
+     text-align: center;
+     width: 100% !important;
+}
+
+.input-container > input {
+     text-align: center;
+     background-color: rgba(255, 255, 255, 0.377);
+     border: solid 0.5px gray;
+     height: 1.6rem;
+}
+.input-container > label {
+     margin-bottom: 0.5rem;
+}
+.container-form-login {
+     height: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 7px 4px;
+     border-radius: 1rem;
+}
+form {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+
+/* .btn-login {
+     color: #000;
+     position: relative;
+     text-decoration: none;
+} */
+
+.btn-login {
+     background: rgba(230, 230, 230, 0.534); /* color de fondo */
+     color: #302b2b; /* color de fuente */
+     border: 0.5px solid #4e4c4c9d; /* tamaño y color de borde */
+     padding: 8px 12px;
+     border-radius: 5px; /* redondear bordes */
+     position: relative;
+     z-index: 1;
+     overflow: hidden;
+     display: inline-block;
+     margin-top: 1rem;
+}
+.btn-login:hover {
+     color: #fff; /* color de fuente hover */
+}
+.btn-login::after {
+     content: "";
+     background: #5a56569f; /* color de fondo hover */
+     position: absolute;
+     z-index: -1;
+     display: block;
+     top: 0;
+     bottom: 0;
+     left: -100%;
+     right: 100%;
+     -webkit-transition: all 0.35s;
+     transition: all 0.35s;
+}
+.btn-login:hover::after {
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     -webkit-transition: all 0.35s;
+     transition: all 0.35s;
+}
+i {
+     margin-right: 7px;
+}
+.fa-key {
+     color: rgb(39, 38, 38);
+}
+.container-login > div > a {
+     color: rgb(55, 55, 63);
+}
+.container-link {
+     display: flex;
+     justify-content: center;
+}
+
+@media screen and (min-width: 550px) {
+     .container-login {
+          width: 70%;
+     }
+     .test > p {
+          padding-left: 1rem;
+          font-size: 14px;
+     }
+}
+@media screen and (min-width: 800px) {
+     .container-login {
+          width: 55%;
+     }
+}
+@media screen and (min-width: 950px) {
+     .container-login {
+          width: 45%;
+     }
+}
+@media screen and (min-width: 1050px) {
+     .container-login {
+          width: 35%;
+     }
+}
+@media screen and (min-width: 1150px) {
+     .container-login {
+          width: 30%;
+     }
+}
