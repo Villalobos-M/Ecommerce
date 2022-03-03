@@ -13,8 +13,9 @@ const Login = () => {
       console.log(data);
       axios.post("https://ecommerce-exercise-backend.herokuapp.com/login/", data)
          .then(res => localStorage.setItem("token" ,res.data.access))
+         .then(() => navigate("/shop"))
          .catch(() => setLoginError("Credenciales incorrectas"))
-      navigate("/shop")
+      
    }
   return (
    <div className='bg-login'>
